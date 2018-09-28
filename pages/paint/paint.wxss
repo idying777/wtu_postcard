@@ -1,0 +1,38 @@
+  page{
+    overflow: auto;
+    min-height: 100%;
+  }
+  .myCanvas{
+    min-height: 90%;
+  }
+  .photo{
+    position: absolute;
+    width: 124rpx;
+    height: 159rpx;
+    left:542rpx;
+    top:387rpx;
+    border: 2rpx solid rgb(155, 155, 155);
+    overflow: hidden;
+    z-index: 10;
+    opacity: 0;
+  }
+  .section{
+     position: absolute;
+     top:55%;
+     width:82%;
+     left:9%;
+     height: 24%;
+  }
+  .a{
+  text-align:center;
+  vertical-align:middle;
+  height:100%;
+  width: 44%;
+  font-size:36rpx;
+  padding: 29rpx 35rpx 50rpx 35rpx;
+  overflow: hidden;
+  }
+  .submit{
+    position: relative;
+    height: 100rpx;
+  }
