@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import "icon.wxss";
+@import "colorui.wxss";
 .container {
   height: 100%;
   display: flex;
@@ -7,4 +9,53 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+
+.fix-iphonex-button {
+  background: linear-gradient(180deg, rgba(255, 189, 91, 1), rgba(237, 130, 79, 1));
+  height: 1448rpx;
+  width: 100%;
+}
+
+.fix-iphonex-button::after {
+  background: linear-gradient(180deg, rgba(255, 189, 91, 1), rgba(237, 130, 79, 1));
+  height: 1206rpx;
+  width: 100%;
+}
+.desc text {
+  text-align: center;
+  color: #999;
+  display: block;
+  margin-bottom: 60rpx;
+}
+.nav-list {
+  display: flex;
+  color: #666;
+  align-items: center;
+  padding: 30rpx;
+  margin: 30rpx 30rpx 0;
+  background: #fff;
+  border-radius: 6rpx;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list.cur {
+  color: #fff;
+  background: rgb(94, 185, 94);
+  box-shadow: 2px 2px 3px rgba(94, 185, 94, 0.4);
+}
+
+.nav-list .iconfont {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-title {
+  margin-right: 20rpx;
+}
+
+.nav-name {
+  color: #aaa;
+  font-size: 24rpx;
+  text-transform: Capitalize;
+}

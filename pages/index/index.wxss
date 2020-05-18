@@ -1,0 +1,139 @@
+page {
+  background: #f8f5f5;
+}
+.container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+}
+.above{
+  
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1800rpx;
+  top:-0;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+}
+#id3{
+  display: block;
+  position: absolute;
+  left: 21%;
+  top: 10%;
+  bottom:28%;
+  right: 24%;
+}
+.below{
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 40%;
+  top:100%;
+  text-align: center;
+}
+#id4{
+  display: block;
+  position: absolute;
+  left: 21%;
+  top: 5%;
+  bottom:25%;
+  right: 23%;
+}
+#id0{
+  display: block;
+  position: absolute;
+  left: 21%;
+  top: 5%;
+  bottom:25%;
+  right: 23%;
+}
+#image{
+  width:100%;
+  height:100%;
+  display: absolute;
+}
+.word{
+  position: absolute;
+  top:77%;
+  width: 100%;
+}
+.first{
+  padding: 0;
+}
+.swiper-screen {
+  height: 460rpx;
+}
+
+.swiper-screen image {
+  width: 100%;
+  display: block;
+  height: 460rpx;
+  margin: 0;
+}
+
+.swiper-bg {
+  background-image: url(http://image.weilanwl.com/img/swiper-bg.png);
+  background-size: cover;
+  height: 500rpx;
+}
+
+.swiper-bg swiper-item {
+  height: 400rpx;
+}
+
+.swiper-bg swiper-item view {
+  margin: 40rpx;
+}
+
+.swiper-bg image {
+  width: 100%;
+  display: block;
+  height: 400rpx;
+  margin: 0;
+  border-radius: 10rpx;
+}
+
+.scroll-bar {
+  background: #fff;
+  display: flex;
+}
+
+.scroll-left, .scroll-right {
+  width: 75rpx;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 36rpx;
+  color: #666;
+}
+
+.scroll-list-box {
+  height: 150rpx;
+  width: 600rpx;
+}
+
+.scroll-list {
+  height: 150rpx;
+  white-space: nowrap;
+}
+
+.scroll-item {
+  display: inline-block;
+  width: 200rpx;
+  height: 150rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170rpx;
+  background-color: #fff;
+}
+image{
+  width:360rpx;
+  height: 360rpx;
+}
+.nav-list + .title {
+  margin-top: 50rpx;
+}

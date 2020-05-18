@@ -1,13 +1,36 @@
-              <view class='photo' bindtap="chooseImageFun">
-                <view class='a' wx:if="{{flag}}">头像</view>
-                <image src="{{imageUrl}}"></image>
-            </view>
-<view class="section">
-  <input  style='width:100%;height:100%;font-size:50rpx;'  maxlength="48" />
 
+<view class='photo' bindtap="chooseImageFun">
+  <view class='a' wx:if="{{flag}}">头像</view>
+  <image src="{{imageUrl}}"></image>
 </view>
-    <canvas canvas-id="myCanvas"  style='width:100%;height:1100rpx'  function="{{onReady}}">
-  </canvas>
-  <view class='submit'>
-      <button formType="submit" class="Btn generateBtn" bindtap="Okgenerate"> 保存</button>  
+
+<canvas canvas-id="myCanvas" style="width:100%;height:{{isIphoneX==true?'1300rpx':'1100rpx'}}" wx:if='{{!save}}' ></canvas>
+
+
+<view class='section'>
+<swiper indicator-dots="true" autoplay="false"  duration="1500" style='width:311.25px;height:150.75px'>	
+    <swiper-item wx:for="{{ius}}">
+      <image src="{{item}}"  class="slide-image" width="111.25" height="150.75"/>
+    </swiper-item>
+</swiper>
+</view>
+
+  <textarea wx:if='{{uploading}}' class='section1' disabled="{{jy}}" placeholder="{{holder1}}"  placeholder-style="color:red;font-size:36rpx" bindinput='usercontentinput1' name="usercontent1" value='{{input}}' maxlength='18'   />
+  <textarea wx:if='{{uploading}}' class='section2' disabled="{{jy}}" placeholder="{{holder2}}"  placeholder-style="color:rgba(255, 217, 0, 0.466);font-size:36rpx" bindinput='usercontentinput2' name="usercontent2" value='{{input}}' maxlength='18'   />
+  <textarea wx:if='{{uploading}}' class='section3' disabled="{{jy}}" placeholder="{{holder3}}"  placeholder-style="color:rgb(145, 255, 0);font-size:36rpx" bindinput='usercontentinput3' name="usercontent3" value='{{input}}' maxlength='18'   />
+  <textarea wx:if='{{uploading}}' class='section4' disabled="{{jy}}" placeholder="{{holder4}}"  placeholder-style="color:rgb(0, 238, 255);font-size:36rpx" bindinput='usercontentinput4' name="usercontent4" value='{{input}}' maxlength='18'   />
+  <textarea wx:if='{{uploading}}' class='section5' disabled="{{jy}}" placeholder="{{holder5}}"  placeholder-style="color:rgb(255, 0, 149);font-size:36rpx" bindinput='usercontentinput5' name="usercontent5" value='{{input}}' maxlength='18'   />
+
+ <!-- <view class='submit'>
+  <button formType="submit" class="Btn generateBtn" bindtap="Okgenerate"> 保存名片</button>
+</view>  -->
+<view class='foot-btn'>
+  <button class='success btn hollow ph-xs pv-xs'bindtap="Okgenerate" formType="submit"><text class='iconfont icon-upload  mr-xs'></text> 保存到本地</button>
+  
+</view> 
+<view class='mode-loading' wx:if="{{showLoading}}">
+  <view class='mode-text'>
+    <view class='iconfont icon-emojifill warning-text'></view>
+    <view class='gray-text'>名片生成中...</view>
   </view>
+</view> 

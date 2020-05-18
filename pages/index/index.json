@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "纺大60周年纪念明信片",
+  "usingComponents": {
+    
+    "wux-toptips": "../../dist/toptips/index"
+  }
+}

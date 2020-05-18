@@ -1,0 +1,71 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class='first'>
+    <view class="userinfo" function="{{onReady}}">
+      <view animation="{{animation1}}" id="id1">
+        <image style="width: 460rpx; height: 400rpx;" mode="{{item.mode}}" src="/pages/img/10.png"></image>
+      </view>
+    </view>
+    <view class="usermotto" function="{{onReady}}">
+      <view animation="{{animation2}}" id="id2">
+        <image style="width: 460rpx; height: 100rpx; " mode="{{item.mode}}    " src="/pages/img/11.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class='above' animation="{{animation3}}" bindtap='bindabove'>
+    <view class="desc">
+      <image src="{{desc.image}}" mode="scaleToFill" mode="aspectFit"></image>
+      <text>{{desc.text}}</text>
+    </view>
+    <view class="bar mt-sm">
+      <view class='ml-sm iconfont icon-titles success-text animation-slide-bottom' style='animation-delay: 3.2s;'>在明信片上留下您的落款</view>
+    </view>
+    <view class="flex p-xs mt-xs pb-lg flex-direction text-center">
+      <view class='doc-box-sub p-xl m-xs mt-xl shadow-lg animation-slide-bottom' style='animation-delay: 3.5s;'>
+        <view class='form-item'>
+          <view class='form-title cur'>
+            姓名
+          </view>
+          <view class='form-input'>
+            <input bindinput='inputname' name='namecontent' type="text" placeholder="name~"></input>
+          </view>
+          <view class='form-input-btn'>
+            <text class='iconfont icon-my secondary-text'></text>
+          </view>
+        </view>
+        <view class='form-item'>
+          <view class='form-title '>
+            班级
+          </view>
+          <view class='form-input'>
+            <input bindinput='inputclass' name='classcontent' type="text" placeholder="class~"></input>
+          </view>
+          <view class='form-input-btn'>
+            <text class='iconfont icon-group secondary-text'></text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="bar mt-sm">
+      <view class='ml-sm iconfont icon-titles success-text animation-slide-bottom' style='animation-delay: 4s;'>选一张作为明信片的背景图</view>
+    </view>
+    <swiper bindchange="swiperChange" class='swiper-bg' indicator-dots="true" circular="true"   duration="500" indicator-active-color="#ff6600">
+      <swiper-item wx:for="{{ius}}">
+        <view class='shadow-alice'>
+          <image src="{{item}}" mode='aspectFill' />
+        </view>
+      </swiper-item>
+    </swiper>
+    
+    <navigator url="../paint/paint?id=1" class="nav-list" >
+    <view class="nav-title">开始生成</view>
+    <view class="nav-name">名片</view>
+    <view class="iconfont icon-right"></view>
+    </navigator>
+    
+
+
+  </view>
+</view>
+<wux-toptips  id="wux-toptips" />

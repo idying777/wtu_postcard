@@ -1,27 +1,89 @@
+
   page{
     overflow: auto;
     min-height: 100%;
+    background: #f1f1f1;
   }
   .myCanvas{
     min-height: 90%;
   }
   .photo{
     position: absolute;
-    width: 124rpx;
-    height: 159rpx;
-    left:542rpx;
-    top:387rpx;
+    width: 20%;
+    height: 15%;
+    left:70%;
+    top:32%;
     border: 2rpx solid rgb(155, 155, 155);
     overflow: hidden;
     z-index: 10;
     opacity: 0;
   }
-  .section{
+  .foot-btn .btn{
+    max-width: 675rpx;
+  }
+  .slide-image{
+    height: 150.75px;
+    width: 311.25px;
+  }
+   .section{
+    position: absolute;
+    width: 311.25px;
+    height: 150.75px;
+    left:31.875px;
+    top:24.12px;
+    overflow: hidden;
+    z-index: 10;
+    opacity: 0;
+  } 
+  .section1{
      position: absolute;
-     top:55%;
-     width:82%;
-     left:9%;
-     height: 24%;
+     top:52.8%;
+     width:89%;
+     left:7%;
+     height:4.5%;
+     color:red;
+     z-index: 20;
+     font-size:36rpx;
+  }
+  .section2{
+     position: absolute;
+     top:58.8%;
+     width:89%;
+     left:7%;
+     height:4.5%;
+     color:rgba(255, 217, 0, 0.466);
+     z-index: 20;
+     font-size:36rpx;
+  }
+  .section3{
+     position: absolute;
+     top:64.8%;
+     width:89%;
+     left:7%;
+     height:4.5%;
+     color:rgb(145, 255, 0);
+     z-index: 20;
+     font-size:36rpx;
+  }
+  .section4{
+     position: absolute;
+     top:70.9%;
+     width:89%;
+     left:7%;
+     height:4.5%;
+     color:rgb(0, 238, 255);
+     z-index: 20;
+     font-size:36rpx;
+  }
+  .section5{
+     position: absolute;
+     top:76.8%;
+     width:89%;
+     left:7%;
+     height:4.5%;
+     color:rgb(255, 0, 149);
+     z-index: 20;
+     font-size:36rpx;
   }
   .a{
   text-align:center;
@@ -35,4 +97,5 @@
   .submit{
     position: relative;
     height: 100rpx;
+    
   }
