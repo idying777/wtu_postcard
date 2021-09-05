@@ -9,7 +9,7 @@ Just search: "武汉纺织大学60周年纪念明信片" in WeChat to run.
 
 # Feedback
 - Telegram:@IDying777
-- QQ: 100355352
+- WeChat: IDying777
 - Gmail:idying707@gmail.com
 
 
